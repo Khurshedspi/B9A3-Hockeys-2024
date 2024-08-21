@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -21,6 +21,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'btn-color': '#FF4240',
                     }
                 }
             }
@@ -29,21 +30,59 @@
     <title>Hockeys 2024</title>
 </head>
 
-<body>
+<body class="manrope-fonts">
     <!-- header  -->
-     <header>
+    <header class="container mx-auto">
+        <!-- ---------------------------------------------navbar starts here ----------------------------------------  -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a class="hover:text-red-500 duration-300 easy-in-out">Home</a></li>
+                            <li><a class="hover:text-red-500 duration-300 easy-in-out">About</a></li>
+                            <li><a class="hover:text-red-500 duration-300 easy-in-out">Pages</a></li>
+                            <li><a class="hover:text-red-500 duration-300 easy-in-out">Blog</a></li>
+                            <li><a class="hover:text-red-500 duration-300 easy-in-out">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class=" text-4xl font-extrabold text-[#131318]">Hockey<span class="text-btn-color">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="hover:text-red-500 duration-300 easy-in-out">Home</a></li>
+                            <li><a class="hover:text-red-500 duration-300 easy-in-out">About</a></li>
+                            <li><a class="hover:text-red-500 duration-300 easy-in-out">Pages</a></li>
+                            <li><a class="hover:text-red-500 duration-300 easy-in-out">Blog</a></li>
+                            <li><a class="hover:text-red-500 duration-300 easy-in-out">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="mr-5 text-gray-400 text-2xl" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="btn bg-btn-color border-0 w-[148px] h-[57px] text-xl font-bold text-white ">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- ----------------------------------------navbar ends here ------------------------------------------  -->
+    </header>
 
-     </header>
+    <!-- main  -->
+    <main>
 
-     <!-- main  -->
-      <main>
+    </main>
 
-      </main>
+    <!-- footer  -->
+    <footer>
 
-      <!-- footer  -->
-       <footer>
-
-       </footer>
+    </footer>
 </body>
 
 </html>
